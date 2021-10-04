@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:layout_marginTop="@dimen/margin_padding_size_small"
+    android:layout_marginStart="@dimen/margin_padding_size_medium"
+    android:layout_marginEnd="@dimen/margin_padding_size_medium"
+    android:layout_marginBottom="@dimen/margin_padding_size_small"
+    app:cardBackgroundColor="@color/orange_500"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/margin_padding_size_small">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:padding="@dimen/small_50"
+            android:layout_margin="@dimen/margin_padding_size_medium"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textStyle="bold"
+            tools:text="Name" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thumbnail_height"
+            android:scaleType="centerCrop"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:padding="@dimen/small_50"
+            android:layout_marginStart="@dimen/margin_padding_size_medium"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"
+            android:singleLine="true"
+            android:textColor="@color/orange_500"
+            android:background="@color/black"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            tools:text="Title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_view_make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_title"
+            android:layout_marginStart="@dimen/margin_padding_size_medium"
+            android:layout_marginEnd="@dimen/margin_padding_size_medium"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_medium"
+            tools:text="Series" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

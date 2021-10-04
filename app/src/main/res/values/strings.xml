@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SixtCodingChallenge</string>
+    <string name="google_api_key">AIzaSyCimcP8CJMoDSGcxiBPuoSRMj9TKVSToG8</string>
+    <string name="title_list">List</string>
+    <string name="title_map">Map</string>
+    <string name="title_no_data">There is no data</string>
+</resources>
